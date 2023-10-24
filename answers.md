@@ -46,6 +46,8 @@ What branches would change, and how?
 git checkout test
 git merge top_N
 ```
+Prediction: The test branch will have the content of top_N as well.
+Actual: Prediction was accurate and it merged top_N to the test branch. Updated the name of the quiz.md file to answers.md
 
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -53,6 +55,8 @@ What branches would change, and how?
 git checkout top_ten
 git merge test
 ```
+Prediction: The top_ten branch will have the content of test as well.
+Actual: Merged test onto the top_ten branch.
 
 7. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -61,3 +65,5 @@ git checkout test
 git rebase top_ten
 git rebase top_N
 ```
+Prediction: puts the content of top_ten and top_N into the main branch.
+Actual: Merged the content of top_ten and top_N on the test branch, keeping the content of both on the test branch.
